@@ -10,7 +10,15 @@
 
                 <div class="card-body text-center">
                 <h3 class="card-title">Book Information</h3>
-                <img " src="{{ URL::to('/assets/img/book.png') }}" class="card-img-top" style="width: 14rem;"alt="no logo">
+
+                @if ($post->img)
+                <img " src="{{ asset('/storage/img/'.$post->img)}}" class="card-img-top" style="width: 20rem;"alt="no logo">
+                @else
+                    <br>
+                    <p  style="font-size: 15px;">No image available</p>
+                    <br>
+                    <br>
+                @endif
                   <h5 class="card-title text-center" style="font-size: 35px;">  {{ $post->Title }}</h5>
                   <p class="card-text" style="font-size: 20px;">  {{ $post->Description }}</p>
                   <br>

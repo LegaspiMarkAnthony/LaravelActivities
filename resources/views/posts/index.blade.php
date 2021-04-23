@@ -17,6 +17,12 @@
                             <a  class="btn btn-success btn-xs text-right"style="float:right;" href="/posts/create" >Add Book</a>
                             Books List
                         </div>
+                        @if (session('status'))
+                        <br>
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     <br>
                     <table class="table table-bordered">
                         <thead>
