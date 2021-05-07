@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
                 <div class="card-body">
                     <div class="card mb-4 text-center">
                         <br>
@@ -15,11 +14,10 @@
                           <a href="{{ route('posts.index') }}" class="btn btn-primary btn-lg">View Book Records &rarr;</a>
                         </div>
                         <div class="card-footer text-center">
-                          <p class="text-center">Developer: Mark Anthony Legaspi (BSIT-3A) </p>
+                            Developer: Mark Anthony Legaspi (BSIT-3A)
                         </div>
                       </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>

@@ -54,6 +54,9 @@
                     </table>
                 </div>
             </div>
+            <div class="card-footer">
+                Total # of Books: {{ $count }}
+             </div>
         </div>
     </div>
 </div>
